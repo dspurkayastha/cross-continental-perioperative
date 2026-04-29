@@ -1,0 +1,13 @@
+{
+  "model_id": "XGB-INS-A",
+  "algorithm": "XGBoost",
+  "oof_auc": 0.807158948936173,
+  "oof_brier": 0.05548033204574912,
+  "oof_calibration_slope": 0.8355959676473813,
+  "oof_o_e_ratio": 0.06930893859706566,
+  "training_duration_min": 21.623607716666665,
+  "timestamp": "2025-12-13T03:20:42.635541",
+  "n_features": 8,
+  "n_samples": 127413,
+  "n_events": 1387
+}

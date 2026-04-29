@@ -1,0 +1,42 @@
+% =============================================================================
+% Materials and Methods. Compiles via the canonical wrapper; see BUILD.md.
+% =============================================================================
+
+
+\section{Materials and Methods}
+\label{sec:methods}
+
+\subsection{Datasets and cohort}
+\label{methods:datasets}
+
+Two publicly available perioperative datasets were used: INSPIRE~\cite{Lim2024} from Seoul National University Hospital (Korea; 2011--2020) and MOVER~\cite{Samad2023} from UC Irvine Medical Center (USA; 2015--2022). The primary outcome was in-hospital mortality, defined for INSPIRE as a non-null \texttt{inhosp\_death\_time} timestamp and for MOVER as a discharge disposition of \texttt{Expired} or \texttt{Coroner}. Final cohort sizes after inclusion and feature-completeness filtering: \pnTableOneNInspire\ (INSPIRE) and \pnTableOneNMover\ (MOVER).
+
+Inclusion required a recorded preoperative ASA physical status (1--6), age, and sex. MOVER's source release implicitly excluded cardiac-catheterization-laboratory and interventional-radiology procedures (no ASA assignment); INSPIRE had no analogous exclusion. Records without a recorded mortality outcome at hospital discharge were excluded from MOVER ($n = 3$ of 58{,}758). Per-cohort criteria are detailed in Supplementary~§S1; the CONSORT flow is shown in Figure~\ref{fig:cohort}. Both datasets were accessed under their respective data-use agreements; no patient-level data are redistributed in this paper.
+
+\subsection{Models}
+\label{methods:models}
+
+Eight models were trained in a $2 \times 2 \times 2$ factorial design: algorithm (XGBoost, logistic regression) $\times$ feature set (8-variable preoperative; 140-variable preoperative+intraoperative) $\times$ training dataset (INSPIRE, MOVER). Intraoperative features were summary statistics of vital signs (heart rate, blood pressure, oxygen saturation, end-tidal CO$_2$, temperature) over the 60-minute post-induction window~\cite{Fritz2019}. Hyperparameters were tuned by Bayesian optimization with 10-fold stratified cross-validation; class imbalance was addressed via XGBoost's per-fold-tuned scale-positive weight, with SMOTE evaluated as a sensitivity analysis (§\ref{sec:results:robustness}) but not used in the main analysis~\cite{Carriero2025}. Events-per-variable (EPV) ratios were 173 and 9.9 for INSPIRE preoperative and intraoperative models, and 103 and 5.9 for MOVER; the intraoperative EPV ratios approach the recommended lower threshold for stable logistic regression in rare-event settings~\cite{Riley2019b}, examined in §\ref{sec:results:intraop}. Full training procedures, hyperparameter search spaces, and feature definitions are in Supplementary~§S2.
+
+\subsection{Statistical framework}
+\label{methods:statframework}
+
+Case-level paired bootstrap (2,000 iterations, \texttt{seed = 42}) served as the primary inferential framework for all quantitative comparisons reported in §\ref{sec:results}. Bootstrap samples were drawn with replacement from cases within each external test set; paired-bootstrap replicates were used for AUC differences and paradox gaps. Bootstrap p-values reported as $p = 0.001$ correspond to the Monte Carlo floor of $1/B$ for $B = 2{,}000$ resamples --- zero of 2{,}000 replicates crossed the null. These values are upper bounds on the true tail probability rather than point estimates. The 4-vs-4 model-level permutation test has minimum achievable $p = 1/\binom{8}{4} = 1/70 \approx 0.014$ regardless of effect magnitude, motivating case-level ($n = $~\pnTableOneNInspire\ and \pnTableOneNMover) rather than model-level ($n = 8$) inference for between-group comparisons. DeLong's test~\cite{DeLong1988} with Benjamini--Hochberg correction was applied to pairwise AUC comparisons as a robustness check. Post-hoc Platt scaling~\cite{Platt1999} was applied for recalibration on external datasets; AUC values are reported separately from calibration statistics because AUC is rank-invariant under monotonic recalibration. Full bootstrap procedure, AUC variance estimation, and correction procedures are in Supplementary~§S3.
+
+\subsection{Matched-subsampling sensitivity for direction asymmetry}
+\label{methods:casemixsensitivity}
+
+Cross-continental degradation asymmetry was stress-tested across four case-mix dimensions: ASA stratum, Elixhauser comorbidity (Van Walraven-weighted scores derived via the Quan ICD-10 mapping), emergency-case proportion, and temporal period. For each non-temporal dimension, three subsampling framings (matching each cohort's distribution and a balanced midpoint) were applied; bootstrap CIs were computed using the same case-level paired bootstrap (2{,}000 iterations, seed 42) as the unmatched primary analysis. Temporal matching was not feasible because INSPIRE distributes timestamps as privacy-preserving relative-time offsets without published calendar-date mappings. Full pseudocode for the two-stratum maximum-$n$ subsampling algorithm and worked examples are in Supplementary~§S4.
+
+\subsection{Feature importance and calibration}
+
+SHAP values (\texttt{shap.TreeExplainer}) were computed on external test sets for the top XGBoost model in each direction (the B-model, using all 140 features); internal values were aggregated from per-fold held-out predictions, and rankings compared via Spearman rank correlation across all 140 shared features (features below the 25th percentile of mean absolute SHAP value were filtered as a noise floor for the transferable-features sub-analysis). Calibration was assessed via slope, intercept, observed-to-expected ratios, and Brier score before and after recalibration. Platt scaling was fit on the external dataset via 5-fold stratified cross-validation, each case held out of its own calibrator fit. Full procedures: Supplementary~§S5.
+
+\subsection{Reporting and reproducibility}
+\label{methods:reproducibility}
+
+This study follows TRIPOD+AI reporting guidelines~\cite{Collins2024} (checklist: Supplementary Table~S1). Code is archived at Zenodo (DOI assigned at submission) under an MIT license; trained XGBoost and logistic-regression artifacts are deposited alongside, pending steward confirmation that the INSPIRE (PhysioNet) and MOVER (UC Irvine) data-use agreements permit open-repository model-weight release. We interpret both DUAs conservatively to prohibit redistribution of patient-level derivatives, including per-case prediction outputs; credentialed researchers can reproduce all analyses by applying the released models to the source data. Aggregated statistics covering every main-text claim are provided in Supplementary~§S6, subject to each DUA's terms and any minimum-cell-size requirements. Software dependencies are pinned and random seeds fixed.
+
+% =============================================================================
+% END OF METHODS
+% =============================================================================

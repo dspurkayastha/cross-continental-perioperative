@@ -1,0 +1,29 @@
+{
+  "anesthesia_type": {
+    "General": 0,
+    "MAC": 1,
+    "Neuraxial": 2,
+    "Regional": 3,
+    "__unknown__": 4
+  },
+  "department": {
+    "AN": 0,
+    "CTS": 1,
+    "DM": 2,
+    "EM": 3,
+    "GS": 4,
+    "IM": 5,
+    "NS": 6,
+    "OG": 7,
+    "OL": 8,
+    "OS": 9,
+    "OT": 10,
+    "PED": 11,
+    "PS": 12,
+    "RAD": 13,
+    "RO": 14,
+    "UR": 15,
+    "__unknown__": 16,
+    "__missing__": -1
+  }
+}

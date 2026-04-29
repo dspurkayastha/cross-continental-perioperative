@@ -1,0 +1,61 @@
+% =============================================================================
+% Build wrapper: xr-integrated submission target. Imports the supplementary's
+% .aux via xr so that main-text \ref{supp:*} references resolve at compile.
+% See BUILD.md for the full compile sequence.
+% =============================================================================
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+\usepackage{rotating}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{xr}
+
+\providecommand{\bomark}{\bottomrule}
+
+\graphicspath{{../}}  %% main-text fragments are one level up; figures live in ../figures/.
+
+\input{../../results/paper_numbers.tex}
+
+% Import the supplementary's .aux so \ref{supp:*} cross-document references resolve.
+% The supplementary must be compiled standalone first.
+\externaldocument{../jamia_supp}
+
+\title{Bidirectional external validation reveals Simpson's paradox and direction-asymmetric transfer in clinical prediction models:\\
+a cross-continental perioperative mortality study}
+\author{Debaraj Shome Purkayastha, MS\\
+\small Department of Oncosurgery, Silchar Cancer Centre, ACCF\\
+\small Silchar Medical Hospital \& College Campus, Ghungoor, Silchar, Assam 788014, India\\
+\small Email: \href{mailto:debaraj.purkayasha@accf.in}{debaraj.purkayasha@accf.in} \quad
+ORCID: \href{https://orcid.org/0009-0001-9641-4384}{0009-0001-9641-4384} \quad
+Phone: +91 96153 42162}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\noindent\textbf{Keywords:} Machine Learning; Clinical Decision Rules; Perioperative Care; Hospital Mortality; Reproducibility of Results
+
+\medskip
+
+\noindent\textbf{Word count} (excluding title page, abstract, references, figures, tables, and end-matter declarations): \textbf{3,727 words.}
+\end{center}
+\bigskip
+
+% This wrapper inputs the four main-text fragments. The supplementary is
+% imported only via xr (above) so its labels resolve without re-rendering it.
+
+\input{../jamia_abstract.tex}
+\input{../jamia_intro_results.tex}
+\input{../jamia_methods.tex}
+\input{../jamia_discussion.tex}
+
+\bibliographystyle{plainnat}
+\bibliography{../references}
+
+\end{document}

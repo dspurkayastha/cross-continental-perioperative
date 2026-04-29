@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# LaTeX intermediates
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Local data (DUA-protected; should never enter the repo)
+data/inspire/
+data/mover/
+*.parquet
+*_predictions.csv
+oof_predictions.csv
+
+# Build artifacts (regenerable)
+manuscript/build/*.aux
+manuscript/build/*.log
+manuscript/build/*.bbl
+manuscript/build/*.blg
+manuscript/build/*.out
+manuscript/build/*.pdf

@@ -1,0 +1,13 @@
+{
+  "model_id": "LR-MOV-B",
+  "algorithm": "LogisticRegression",
+  "oof_auc": 0.9312326414051642,
+  "oof_brier": 0.09669270499760897,
+  "oof_calibration_slope": 0.8734233256282362,
+  "oof_o_e_ratio": 0.06701949456021758,
+  "training_duration_min": 1.1627759333333332,
+  "timestamp": "2025-12-13T10:39:14.092996",
+  "n_features": 140,
+  "n_samples": 57545,
+  "n_events": 823
+}

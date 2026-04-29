@@ -1,0 +1,2 @@
+status,blocker,remediation,n_cases,n_events,auc,ci_lower,ci_upper
+BLOCKED_data_unavailable,PATIENT_RACE_C and PATIENT_ETHNIC_C are not present in the MOVER EPIC EMR release used for this study,Race-stratified analysis is not possible without an updated MOVER release that includes self-reported race and ethnicity.,0,0,,,

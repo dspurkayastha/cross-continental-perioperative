@@ -1,0 +1,66 @@
+cff-version: 1.2.0
+title: >-
+  Cross-Continental Perioperative Mortality Prediction:
+  reproducibility repository
+message: >-
+  If you use this software or the released model objects, please cite both the
+  associated JAMIA paper (preferred citation) and this software deposit.
+type: software
+version: 1.0.0
+authors:
+  - given-names: Debaraj
+    family-names: Shome Purkayastha
+    affiliation: >-
+      Department of Oncosurgery, Silchar Cancer Centre, ACCF, Silchar, Assam, India
+    orcid: 'https://orcid.org/0009-0001-9641-4384'
+    email: debaraj.purkayasha@accf.in
+license: MIT
+repository-code: 'https://github.com/dspurkayastha/cross-continental-perioperative'
+abstract: >-
+  Bidirectional external validation of eight clinical prediction models for
+  in-hospital surgical mortality (XGBoost and logistic regression × preoperative
+  and preoperative+intraoperative feature sets × INSPIRE [Korea, n = 127,413]
+  and MOVER [USA, n = 57,545] training cohorts). Demonstrates Simpson's paradox
+  in preoperative models, direction-asymmetric transfer surviving multi-
+  dimensional case-mix matching, and dissociation between SHAP rank
+  preservation (transfers) and probability calibration (does not transfer).
+  Repository contains analysis code, figure-generation scripts, trained model
+  objects, aggregate analysis outputs, and LaTeX manuscript sources. Per-case
+  prediction outputs and raw source data are not redistributed (credentialed-
+  access data-use agreement constraint).
+keywords:
+  - machine learning
+  - clinical decision rules
+  - perioperative care
+  - hospital mortality
+  - reproducibility of results
+  - external validation
+  - Simpson's paradox
+  - calibration
+preferred-citation:
+  type: article
+  title: >-
+    Bidirectional external validation reveals Simpson's paradox and
+    direction-asymmetric transfer in clinical prediction models: a
+    cross-continental perioperative mortality study
+  authors:
+    - given-names: Debaraj
+      family-names: Shome Purkayastha
+      affiliation: >-
+        Department of Oncosurgery, Silchar Cancer Centre, ACCF, Silchar, Assam, India
+      orcid: 'https://orcid.org/0009-0001-9641-4384'
+  journal: Journal of the American Medical Informatics Association
+  year: 2026
+  notes: >-
+    Under review at the time of this software release. Update the year, volume,
+    issue, pages, and DOI fields once the article is published.
+identifiers:
+  - description: medRxiv preprint v1
+    type: doi
+    value: 10.64898/2025.12.28.25343118
+  - description: INSPIRE source dataset (PhysioNet)
+    type: doi
+    value: 10.13026/46m4-f655
+  - description: MOVER source dataset (UCI Machine Learning Repository)
+    type: doi
+    value: 10.24432/C5VS5G

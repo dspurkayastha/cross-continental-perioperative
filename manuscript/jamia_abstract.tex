@@ -1,0 +1,25 @@
+% =============================================================================
+% Structured abstract. Compiles via the canonical wrapper; see BUILD.md.
+% =============================================================================
+
+\begin{abstract}
+
+\noindent\textbf{Objective.} To test whether stratified external validation detects Simpson's paradox in clinical prediction models, whether cross-population transferability is symmetric, and whether case-level paired bootstrap provides a unified inferential framework.
+
+\vspace{0.5em}
+\noindent\textbf{Materials and Methods.} Bidirectional external validation of eight machine learning models (XGBoost and logistic regression $\times$ preoperative and preoperative+intraoperative features $\times$ trained on INSPIRE [Korea; n = \pnTableOneNInspire] or MOVER [USA; n = \pnTableOneNMover]). Case-level paired bootstrap (2,000 iterations) served as the primary inferential framework. Direction asymmetry was stress-tested via matched-subsampling across four case-mix dimensions (ASA, Elixhauser comorbidity, emergency proportion, temporal period). Feature-importance transferability was assessed via SHAP rank correlation.
+
+\vspace{0.5em}
+\noindent\textbf{Results.} Preoperative models exhibited Simpson's paradox: one model achieved overall AUC 0.756 while within-stratum AUC fell to 0.58--0.60 (gap +16.5 pp, 95\% CI 15.1--18.0). Cross-continental transferability was markedly asymmetric (+8.53 pp, 95\% CI 6.91--10.24, bootstrap $p = 0.001$); the asymmetry survived matching on ASA and comorbidity, attenuated to 70--86\% of baseline after matching emergency proportion, and was untestable for temporal period. Internal--external SHAP rank correlation was 0.97 for the best model; all models required Platt recalibration. Intraoperative features provided a mean external AUC advantage of \pnMeanIntraopAdvantageFull.
+
+\vspace{0.5em}
+\noindent\textbf{Discussion.} Aggregate discrimination metrics systematically underreport cross-population deployment risks. Stratified within-cohort analysis, bidirectional testing with matched case-mix sensitivity, and case-level bootstrap inference together detect failure modes invisible to conventional reporting. Cross-population models preserve feature relationships but not probability mappings.
+
+\vspace{0.5em}
+\noindent\textbf{Conclusion.} External validation of clinical prediction models requires stratified, bidirectional, and case-level-inferential evaluation. We jointly demonstrate three TRIPOD+AI-aligned commitments and recommend their routine adoption in cross-population external validation.
+
+\end{abstract}
+
+% =============================================================================
+% END OF ABSTRACT
+% =============================================================================

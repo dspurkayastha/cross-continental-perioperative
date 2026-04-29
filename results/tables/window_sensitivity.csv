@@ -1,0 +1,2 @@
+status,blocker,remediation_option_1,remediation_option_2,window_min,auc_xgb_ins_b_on_mover,auc_xgb_mov_b_on_inspire
+BLOCKED_requires_phase1_rerun,Only the 60-min intraoperative-feature variant is cached in the cached intraoperative-feature directory; 30-min and 120-min variants are not available without re-running the intraoperative-feature extraction step,Re-run intraoperative-feature extraction at 30 and 120 min then retrain XGB-INS-B and XGB-MOV-B for each window,"Cite the literature precedent for a 60-min window (Fritz 2019; MySurgeryRisk)",n/a,,

@@ -1,0 +1,4 @@
+dimension,framing,framing_label,matched_asymmetry_pp,ci_lower,ci_upper,bootstrap_p,pct_of_baseline,interpretation,n_inspire_test,n_mover_test,notes
+emergency,emergency_match_mover_prop,INSPIRE matched to MOVER emergency rate (15.6%),0.06008455708036893,0.042536091723267555,0.0792799830371125,0.0009995002498750624,70.44311939770434,partial_driver,64314,57545,
+emergency,emergency_match_inspire_prop,MOVER matched to INSPIRE emergency rate (7.9%),0.07322415403358344,0.053651781160937224,0.09222551422161138,0.0009995002498750624,85.84797951467132,not_primary_driver,127413,52723,
+emergency,emergency_balanced_midpoint,Both matched to midpoint emergency rate (11.75%),0.07158777869510519,0.052515602539241514,0.09020087764395851,0.0009995002498750624,83.92949348516302,not_primary_driver,85387,55023,

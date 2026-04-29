@@ -1,0 +1,13 @@
+{
+  "model_id": "LR-INS-A",
+  "algorithm": "LogisticRegression",
+  "oof_auc": 0.8513001048032214,
+  "oof_brier": 0.14503603094232298,
+  "oof_calibration_slope": 0.9001684458955095,
+  "oof_o_e_ratio": 0.03433354568540371,
+  "training_duration_min": 0.24094788333333333,
+  "timestamp": "2025-12-13T10:33:50.715396",
+  "n_features": 8,
+  "n_samples": 127413,
+  "n_events": 1387
+}

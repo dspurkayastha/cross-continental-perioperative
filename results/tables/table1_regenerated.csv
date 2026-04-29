@@ -1,0 +1,18 @@
+characteristic,"INSPIRE (n=127,413)","MOVER (n=57,545)",test,statistic,p_value
+n (total cases),"127,413","57,545",,,
+"Age, years, median (IQR)",60 (45–70),57 (41–68),Welch t,12.947,2.62e-38
+"Age, years, mean ± SD",55.8 ± 16.0,54.7 ± 17.6,Welch t,12.947,2.62e-38
+Sex,,,χ²,1038.233,8.79e-228
+  Female,"71,081 (55.8%)","27,456 (47.7%)",,,
+  Male,"56,332 (44.2%)","30,089 (52.3%)",,,
+"BMI, kg/m² (mean ± SD)",24.7 ± 73.1,27.9 ± 6.9,Welch t,-15.239,2.15e-52
+ASA physical status,,,χ²,59132.924,0.00e+00
+  ASA 1–2,"115,139 (90.4%)","21,028 (36.5%)",,,
+  ASA ≥3,"12,274 (9.6%)","36,517 (63.5%)",,,
+Surgery,,,χ²,2575.191,0.00e+00
+  Emergency,"10,033 (7.9%)","8,987 (15.6%)",,,
+  Elective,"117,380 (92.1%)","48,558 (84.4%)",,,
+In-hospital mortality,"1,387 (1.1%)",823 (1.4%),χ²,38.893,4.48e-10
+Deaths by ASA stratum,,,,,
+  ASA 1–2,654 (47.2% of deaths; 0.57% mortality),9 (1.1% of deaths; 0.04% mortality),,,
+  ASA ≥3,733 (52.8% of deaths; 5.97% mortality),814 (98.9% of deaths; 2.23% mortality),,,

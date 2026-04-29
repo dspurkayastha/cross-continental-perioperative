@@ -1,0 +1,21 @@
+model_name,feature,rank_internal,rank_external,mean_abs_shap_internal,mean_abs_shap_external,criterion
+XGB-INS-B,asa,1,1,0.3795468807220459,0.7779231667518616,top-20 in both internal and external
+XGB-INS-B,bmi,2,2,0.3537276089191437,0.40873682498931885,top-20 in both internal and external
+XGB-INS-B,age,3,4,0.3416388928890228,0.30478203296661377,top-20 in both internal and external
+XGB-INS-B,hr_mean,4,5,0.15845589339733124,0.20084193348884583,top-20 in both internal and external
+XGB-INS-B,sex,5,8,0.13756373524665833,0.12171688675880432,top-20 in both internal and external
+XGB-INS-B,emergency,6,6,0.13461388647556305,0.19149908423423767,top-20 in both internal and external
+XGB-INS-B,hr_n,7,3,0.09966675192117691,0.33307141065597534,top-20 in both internal and external
+XGB-INS-B,hr_min,8,10,0.09569608420133591,0.12071245908737183,top-20 in both internal and external
+XGB-INS-B,department,9,12,0.08697760850191116,0.06995522975921631,top-20 in both internal and external
+XGB-INS-B,dbp_art_mean,10,13,0.07980037480592728,0.06435777992010117,top-20 in both internal and external
+XGB-MOV-B,asa,1,1,1.7034982442855835,2.4211926460266113,top-20 in both internal and external
+XGB-MOV-B,bmi,2,3,0.3814723789691925,0.3351272940635681,top-20 in both internal and external
+XGB-MOV-B,age,3,4,0.3771992623806,0.27843979001045227,top-20 in both internal and external
+XGB-MOV-B,height_cm,4,8,0.2348707765340805,0.14337994158267975,top-20 in both internal and external
+XGB-MOV-B,weight_kg,5,5,0.20819272100925446,0.15952062606811523,top-20 in both internal and external
+XGB-MOV-B,high_asa,6,2,0.1816287636756897,0.4191551208496094,top-20 in both internal and external
+XGB-MOV-B,etco2_std,7,6,0.16105052828788757,0.1559169888496399,top-20 in both internal and external
+XGB-MOV-B,high_asa_emergency,8,9,0.14132609963417053,0.13235819339752197,top-20 in both internal and external
+XGB-MOV-B,hr_first,9,12,0.13608545064926147,0.10072766244411469,top-20 in both internal and external
+XGB-MOV-B,hr_mean,10,7,0.13363774120807648,0.14866061508655548,top-20 in both internal and external

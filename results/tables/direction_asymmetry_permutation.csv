@@ -1,0 +1,2 @@
+observed_statistic,mean_degradation_inspire,mean_degradation_mover,degradation_ratio_mov_over_ins,n_permutations_mc,mc_p_value,mc_p_value_formatted,exact_n_splits,exact_p_value,achievable_min_p,null_dist_mean,null_dist_2.5_pct,null_dist_97.5_pct,internal_auc_source,seed
+0.0852951396731119,0.0540096246256386,0.1393047642987506,2.579258146382707,10000,0.1408859114088591,1408/10000 + 1,70,0.1428571428571428,0.0142857142857142,0.0455101577325133,0.0032896074210259,0.111034823781909,phase2_3_training_summary.json,45

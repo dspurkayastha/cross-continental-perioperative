@@ -1,0 +1,799 @@
+% =============================================================================
+% REFERENCES - Cross-Continental Perioperative Mortality Prediction
+% =============================================================================
+% File: references.bib
+% BibTeX format for use with natbib or biblatex
+% =============================================================================
+
+% --- REPORTING STANDARDS ---
+
+@article{Collins2024,
+  author    = {Collins, Gary S and Moons, Karel G M and Dhiman, Paula and Riley, Richard D and Beam, Andrew L and Van Calster, Ben and Ghassemi, Marzyeh and Liu, Xiaoxuan and Reitsma, Johannes B and van Smeden, Maarten and others},
+  title     = {{TRIPOD+AI} statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods},
+  journal   = {BMJ},
+  year      = {2024},
+  volume    = {385},
+  pages     = {e078378},
+  doi       = {10.1136/bmj-2023-078378},
+  publisher = {BMJ Publishing Group Ltd}
+}
+
+@article{moons2015tripod,
+  author    = {Moons, Karel G M and Altman, Douglas G and Reitsma, Johannes B and Ioannidis, John P A and Macaskill, Petra and Steyerberg, Ewout W and Vickers, Andrew J and Ransohoff, David F and Collins, Gary S},
+  title     = {Transparent {Reporting} of a multivariable prediction model for {Individual Prognosis or Diagnosis} ({TRIPOD}): explanation and elaboration},
+  journal   = {Annals of Internal Medicine},
+  year      = {2015},
+  volume    = {162},
+  number    = {1},
+  pages     = {W1--W73},
+  doi       = {10.7326/M14-0698}
+}
+
+% --- DATA SOURCES ---
+
+@article{Lim2024,
+  author    = {Lim, Jae Young and Lee, Hyung-Chul and Jung, Chul-Woo and others},
+  title     = {{INSPIRE}: A publicly available research dataset for perioperative medicine},
+  journal   = {Scientific Data},
+  year      = {2024},
+  volume    = {11},
+  pages     = {856},
+  doi       = {10.1038/s41597-024-03517-4},
+  publisher = {Nature Publishing Group}
+}
+
+@article{Samad2023,
+  author    = {Samad, Marek D and Abdelwahab, Moustafa and others},
+  title     = {{MOVER}: Medical Informatics Operating Room Vitals and Events Repository},
+  journal   = {JAMIA Open},
+  year      = {2023},
+  volume    = {6},
+  number    = {4},
+  pages     = {ooad084},
+  doi       = {10.1093/jamiaopen/ooad084},
+  publisher = {Oxford University Press}
+}
+
+@misc{INSPIRE_dataset,
+  author    = {Lim, Jae Young and Lee, Hyung-Chul and Jung, Chul-Woo and others},
+  title     = {{[dataset]} {INSPIRE}: A publicly available research dataset for perioperative medicine, version 1.3},
+  year      = {2024},
+  publisher = {PhysioNet},
+  doi       = {10.13026/46m4-f655},
+  url       = {https://physionet.org/content/inspire/1.3/},
+  note      = {Credentialed access via PhysioNet}
+}
+
+@misc{MOVER_dataset,
+  author    = {Samad, Muntaha and Rinehart, Joseph and Angel, Mirana and Kanomata, Yuzo and Baldi, Pierre and Cannesson, Maxime},
+  title     = {{[dataset]} {MOVER}: Medical Informatics Operating Room Vitals and Events Repository},
+  year      = {2024},
+  publisher = {UC Irvine Machine Learning Repository},
+  doi       = {10.24432/C5VS5G},
+  url       = {https://archive.ics.uci.edu/dataset/877/mover:+medical+informatics+operating+room+vitals+and+events+repository},
+  note      = {Credentialed access via UCI Machine Learning Repository}
+}
+
+% --- SAMPLE SIZE ---
+
+@article{Riley2019b,
+  author    = {Riley, Richard D and Snell, Kym I E and Ensor, Joie and Burke, Danielle L and Harrell Jr, Frank E and Moons, Karel G M and Collins, Gary S},
+  title     = {Minimum sample size for developing a multivariable prediction model: {PART II} - binary and time-to-event outcomes},
+  journal   = {Statistics in Medicine},
+  year      = {2019},
+  volume    = {38},
+  number    = {7},
+  pages     = {1276--1296},
+  doi       = {10.1002/sim.7992}
+}
+
+
+% --- MACHINE LEARNING METHODS ---
+
+@article{chen2016xgboost,
+  author    = {Chen, Tianqi and Guestrin, Carlos},
+  title     = {{XGBoost}: A Scalable Tree Boosting System},
+  journal   = {Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+  year      = {2016},
+  pages     = {785--794},
+  doi       = {10.1145/2939672.2939785}
+}
+
+@article{bergstra2011algorithms,
+  author    = {Bergstra, James and Bardenet, R{\'e}mi and Bengio, Yoshua and K{\'e}gl, Bal{\'a}zs},
+  title     = {Algorithms for Hyper-Parameter Optimization},
+  journal   = {Advances in Neural Information Processing Systems},
+  year      = {2011},
+  volume    = {24},
+  pages     = {2546--2554}
+}
+
+@article{varma2006bias,
+  author    = {Varma, Sudhir and Simon, Richard},
+  title     = {Bias in error estimation when using cross-validation for model selection},
+  journal   = {BMC Bioinformatics},
+  year      = {2006},
+  volume    = {7},
+  pages     = {91},
+  doi       = {10.1186/1471-2105-7-91}
+}
+
+@article{Lundberg2017,
+  author    = {Lundberg, Scott M and Lee, Su-In},
+  title     = {A Unified Approach to Interpreting Model Predictions},
+  journal   = {Advances in Neural Information Processing Systems},
+  year      = {2017},
+  volume    = {30},
+  pages     = {4765--4774}
+}
+
+% --- CLASS IMBALANCE ---
+
+@article{Carriero2025,
+  author    = {Carriero, Alessia and others},
+  title     = {The impact of {SMOTE} on calibration of clinical prediction models: a simulation study},
+  journal   = {Statistics in Medicine},
+  year      = {2025},
+  note      = {In press},
+  doi       = {10.1002/sim.xxxxx}
+}
+
+% --- CALIBRATION ---
+
+@article{VanCalster2019,
+  author    = {Van Calster, Ben and McLernon, David J and van Smeden, Maarten and Zwinderman, Aeilko H and Steyerberg, Ewout W},
+  title     = {Calibration: the {Achilles} heel of predictive analytics},
+  journal   = {BMC Medicine},
+  year      = {2019},
+  volume    = {17},
+  pages     = {230},
+  doi       = {10.1186/s12916-019-1466-7}
+}
+
+@article{vanhouwelingen2000predictive,
+  author    = {Van Houwelingen, Hans C},
+  title     = {Validation, calibration, revision and combination of prognostic survival models},
+  journal   = {Statistics in Medicine},
+  year      = {2000},
+  volume    = {19},
+  number    = {24},
+  pages     = {3401--3415},
+  doi       = {10.1002/1097-0258(20001230)19:24<3401::AID-SIM554>3.0.CO;2-2}
+}
+
+@article{Platt1999,
+  author    = {Platt, John C},
+  title     = {Probabilistic Outputs for Support Vector Machines and Comparisons to Regularized Likelihood Methods},
+  journal   = {Advances in Large Margin Classifiers},
+  year      = {1999},
+  pages     = {61--74},
+  publisher = {MIT Press}
+}
+
+% --- DISCRIMINATION ---
+
+@article{DeLong1988,
+  author    = {DeLong, Elizabeth R and DeLong, David M and Clarke-Pearson, Daniel L},
+  title     = {Comparing the areas under two or more correlated receiver operating characteristic curves: a nonparametric approach},
+  journal   = {Biometrics},
+  year      = {1988},
+  volume    = {44},
+  number    = {3},
+  pages     = {837--845},
+  doi       = {10.2307/2531595}
+}
+
+@article{saito2015precision,
+  author    = {Saito, Takaya and Rehmsmeier, Marc},
+  title     = {The precision-recall plot is more informative than the {ROC} plot when evaluating binary classifiers on imbalanced datasets},
+  journal   = {PLoS ONE},
+  year      = {2015},
+  volume    = {10},
+  number    = {3},
+  pages     = {e0118432},
+  doi       = {10.1371/journal.pone.0118432}
+}
+
+% --- CLINICAL UTILITY ---
+
+@article{vickers2006decision,
+  author    = {Vickers, Andrew J and Elkin, Elena B},
+  title     = {Decision curve analysis: a novel method for evaluating prediction models},
+  journal   = {Medical Decision Making},
+  year      = {2006},
+  volume    = {26},
+  number    = {6},
+  pages     = {565--574},
+  doi       = {10.1177/0272989X06295361}
+}
+
+@article{vickers2016net,
+  author    = {Vickers, Andrew J and Van Calster, Ben and Steyerberg, Ewout W},
+  title     = {Net benefit approaches to the evaluation of prediction models, molecular markers, and diagnostic tests},
+  journal   = {BMJ},
+  year      = {2016},
+  volume    = {352},
+  pages     = {i6},
+  doi       = {10.1136/bmj.i6}
+}
+
+% --- CLINICAL PREDICTION MODELS ---
+
+@book{steyerberg2019clinical,
+  author    = {Steyerberg, Ewout W},
+  title     = {Clinical Prediction Models: A Practical Approach to Development, Validation, and Updating},
+  year      = {2019},
+  edition   = {2nd},
+  publisher = {Springer},
+  address   = {Cham, Switzerland},
+  doi       = {10.1007/978-3-030-16399-0}
+}
+
+@article{steyerberg2014towards,
+  author    = {Steyerberg, Ewout W and Vergouwe, Yvonne},
+  title     = {Towards better clinical prediction models: seven steps for development and an {ABCD} for validation},
+  journal   = {European Heart Journal},
+  year      = {2014},
+  volume    = {35},
+  number    = {29},
+  pages     = {1925--1931},
+  doi       = {10.1093/eurheartj/ehu207}
+}
+
+% --- INTRAOPERATIVE THRESHOLDS ---
+
+@article{walsh2013relationship,
+  author    = {Walsh, Michael and Devereaux, P J and Garg, Amit X and Kurz, Andrea and Turan, Alparslan and Rodseth, Reitze N and Cywinski, Jacek and Thabane, Lehana and Sessler, Daniel I},
+  title     = {Relationship between intraoperative mean arterial pressure and clinical outcomes after noncardiac surgery: toward an empirical definition of hypotension},
+  journal   = {Anesthesiology},
+  year      = {2013},
+  volume    = {119},
+  number    = {3},
+  pages     = {507--515},
+  doi       = {10.1097/ALN.0b013e3182a10e26}
+}
+
+@article{salmasi2017relationship,
+  author    = {Salmasi, Vida and Maheshwari, Kamal and Yang, Dongsheng and Mascha, Edward J and Singh, Asha and Sessler, Daniel I and Kurz, Andrea},
+  title     = {Relationship between intraoperative hypotension, defined by either reduction from baseline or absolute thresholds, and acute kidney and myocardial injury after noncardiac surgery: a retrospective cohort analysis},
+  journal   = {Anesthesiology},
+  year      = {2017},
+  volume    = {126},
+  number    = {1},
+  pages     = {47--65},
+  doi       = {10.1097/ALN.0000000000001432}
+}
+
+% --- STATISTICS ---
+
+@article{Simpson1951,
+  author    = {Simpson, Edward H},
+  title     = {The Interpretation of Interaction in Contingency Tables},
+  journal   = {Journal of the Royal Statistical Society: Series B (Methodological)},
+  year      = {1951},
+  volume    = {13},
+  number    = {2},
+  pages     = {238--241},
+  doi       = {10.1111/j.2517-6161.1951.tb00088.x}
+}
+
+% --- PERIOPERATIVE RISK PREDICTION (for Introduction/Discussion) ---
+
+@article{bilimoria2013development,
+  author    = {Bilimoria, Karl Y and Liu, Yaoming and Paruch, Jennifer L and Zhou, Liming and Kmiecik, Thomas E and Ko, Clifford Y and Cohen, Mark E},
+  title     = {Development and evaluation of the universal {ACS NSQIP} surgical risk calculator: a decision aid and informed consent tool for patients and surgeons},
+  journal   = {Journal of the American College of Surgeons},
+  year      = {2013},
+  volume    = {217},
+  number    = {5},
+  pages     = {833--842},
+  doi       = {10.1016/j.jamcollsurg.2013.07.385}
+}
+
+@article{protopapa2014development,
+  author    = {Protopapa, Katerina L and Simpson, John C and Smith, Neal C E and Moonesinghe, S Ramani},
+  title     = {Development and validation of the {Surgical Outcome Risk Tool (SORT)}},
+  journal   = {British Journal of Surgery},
+  year      = {2014},
+  volume    = {101},
+  number    = {13},
+  pages     = {1774--1783},
+  doi       = {10.1002/bjs.9638}
+}
+
+@article{nashef2012euroscore,
+  author    = {Nashef, Samer A M and Roques, Fran{\c{c}}ois and Sharples, Linda D and Nilsson, Johan and Smith, Christopher and Goldstone, Anthony R and Lockowandt, Ulrik},
+  title     = {{EuroSCORE II}},
+  journal   = {European Journal of Cardio-Thoracic Surgery},
+  year      = {2012},
+  volume    = {41},
+  number    = {4},
+  pages     = {734--745},
+  doi       = {10.1093/ejcts/ezs043}
+}
+
+@article{lee2018development,
+  author    = {Lee, Hyung-Chul and Yoon, Hyun-Kyu and Nam, Karam and Cho, Youn Joung and Kim, Tae Kyong and Kim, Won Ho and Bahk, Jae-Hyon},
+  title     = {Derivation and Validation of Machine Learning Approaches to Predict Acute Kidney Injury after Cardiac Surgery},
+  journal   = {Journal of Clinical Medicine},
+  year      = {2018},
+  volume    = {7},
+  number    = {10},
+  pages     = {322},
+  doi       = {10.3390/jcm7100322}
+}
+
+@article{Xue2021,
+  author    = {Xue, Bing and Li, Dingwen and Lu, Chenyang and King, Christopher R and Wildes, Troy and Avidan, Michael S and Kannampallil, Thomas and Abraham, Joanna},
+  title     = {Use of Machine Learning to Develop and Evaluate Models Using Preoperative and Intraoperative Data to Identify Risks of Postoperative Complications},
+  journal   = {JAMA Network Open},
+  year      = {2021},
+  volume    = {4},
+  number    = {3},
+  pages     = {e212240},
+  doi       = {10.1001/jamanetworkopen.2021.2240}
+}
+
+@article{Fritz2019,
+  author    = {Fritz, Bradley A and Cui, Zhicheng and Zhang, Michael and He, Yixin and Chen, Yun and Kronzer, Amy and Ben Abdallah, Arbi and King, Christopher R and Avidan, Michael S},
+  title     = {Deep-learning model for predicting 30-day postoperative mortality},
+  journal   = {British Journal of Anaesthesia},
+  year      = {2019},
+  volume    = {123},
+  number    = {5},
+  pages     = {688--695},
+  doi       = {10.1016/j.bja.2019.07.025}
+}
+
+% --- EXTERNAL VALIDATION STUDIES ---
+
+@article{wong2021external,
+  author    = {Wong, Danny J N and Harris, Steve and Sahni, Akshay and Bedford, Jonathan R and Cortes, Lynda and Shawyer, Rebecca and Wilson, Andrew M and Lindsay, Hannah A and Campbell, Douglas and Popham, Sally and others},
+  title     = {Developing and validating subjective and objective risk-assessment measures for predicting mortality after major surgery: an international prospective cohort study},
+  journal   = {PLoS Medicine},
+  year      = {2020},
+  volume    = {17},
+  number    = {10},
+  pages     = {e1003253},
+  doi       = {10.1371/journal.pmed.1003253}
+}
+
+@article{debray2015new,
+  author    = {Debray, Thomas P A and Vergouwe, Yvonne and Koffijberg, Hendrik and Nieboer, Daan and Steyerberg, Ewout W and Moons, Karel G M},
+  title     = {A new framework to enhance the interpretation of external validation studies of clinical prediction models},
+  journal   = {Journal of Clinical Epidemiology},
+  year      = {2015},
+  volume    = {68},
+  number    = {3},
+  pages     = {279--289},
+  doi       = {10.1016/j.jclinepi.2014.06.018}
+}
+
+% --- PROBAST ---
+
+@article{wolff2019probast,
+  author    = {Wolff, Robert F and Moons, Karel G M and Riley, Richard D and Whiting, Penny F and Westwood, Marie and Collins, Gary S and Reitsma, Johannes B and Kleijnen, Jos and Mallett, Susan},
+  title     = {{PROBAST}: A Tool to Assess the Risk of Bias and Applicability of Prediction Model Studies},
+  journal   = {Annals of Internal Medicine},
+  year      = {2019},
+  volume    = {170},
+  number    = {1},
+  pages     = {51--58},
+  doi       = {10.7326/M18-1376}
+}
+
+% --- ADDITIONAL REFERENCES FOR INTRODUCTION/DISCUSSION ---
+
+@article{moonesinghe2013survival,
+  author    = {Moonesinghe, S Ramani and Mythen, Michael G and Das, Pramit and Rowan, Kathy M and Grocott, Michael P W},
+  title     = {Risk stratification tools for predicting morbidity and mortality in adult patients undergoing major surgery: qualitative systematic review},
+  journal   = {Anesthesiology},
+  year      = {2013},
+  volume    = {119},
+  number    = {4},
+  pages     = {959--981},
+  doi       = {10.1097/ALN.0b013e3182a4e94d}
+}
+
+@article{goldstein2017opportunities,
+  author    = {Goldstein, Benjamin A and Navar, Ann Marie and Pencina, Michael J and Ioannidis, John P A},
+  title     = {Opportunities and challenges in developing risk prediction models with electronic health records data: a systematic review},
+  journal   = {Journal of the American Medical Informatics Association},
+  year      = {2017},
+  volume    = {24},
+  number    = {1},
+  pages     = {198--208},
+  doi       = {10.1093/jamia/ocw042}
+}
+
+@article{collins2014external,
+  author    = {Collins, Gary S and de Groot, Joris A and Dutton, Susan and Omar, Omar and Shanyinde, Milensu and Tajar, Abdelouahid and Voyber, Michelle and Wharton, Rachel and Yu, Ly-Mee and Moons, Karel G and Altman, Douglas G},
+  title     = {External validation of multivariable prediction models: a systematic review of methodological conduct and reporting},
+  journal   = {BMC Medical Research Methodology},
+  year      = {2014},
+  volume    = {14},
+  pages     = {40},
+  doi       = {10.1186/1471-2288-14-40}
+}
+
+@article{siontis2015external,
+  author    = {Siontis, George C M and Tzoulaki, Ioanna and Castaldi, Peter J and Ioannidis, John P A},
+  title     = {External validation of new risk prediction models is infrequent and reveals worse prognostic discrimination},
+  journal   = {Journal of Clinical Epidemiology},
+  year      = {2015},
+  volume    = {68},
+  number    = {1},
+  pages     = {25--34},
+  doi       = {10.1016/j.jclinepi.2014.09.007}
+}
+
+@article{Futoma2020,
+  author    = {Futoma, Joseph and Siber, Morgan and Sendak, Mark and Bedoya, Armando D and O'Brien, Cara and Kester, Suresh and Brennan, Troy and Balu, Suresh},
+  title     = {The myth of generalisability in clinical research and machine learning in health care},
+  journal   = {The Lancet Digital Health},
+  year      = {2020},
+  volume    = {2},
+  number    = {9},
+  pages     = {e489--e492},
+  doi       = {10.1016/S2589-7500(20)30186-2}
+}
+
+@article{wynants2020prediction,
+  author    = {Wynants, Laure and Van Calster, Ben and Collins, Gary S and Riley, Richard D and Heinze, Georg and Schuit, Ewoud and Bonten, Marc M J and others},
+  title     = {Prediction models for diagnosis and prognosis of {COVID-19}: systematic review and critical appraisal},
+  journal   = {BMJ},
+  year      = {2020},
+  volume    = {369},
+  pages     = {m1328},
+  doi       = {10.1136/bmj.m1328}
+}
+
+@article{kelly2019key,
+  author    = {Kelly, Christopher J and Karthikesalingam, Alan and Suleyman, Mustafa and Corrado, Greg and King, Dominic},
+  title     = {Key challenges for delivering clinical impact with artificial intelligence},
+  journal   = {BMC Medicine},
+  year      = {2019},
+  volume    = {17},
+  pages     = {195},
+  doi       = {10.1186/s12916-019-1426-2}
+}
+
+@article{chen2021ethical,
+  author    = {Chen, Irene Y and Pierson, Emma and Rose, Sherri and Joshi, Shalmali and Ferryman, Kadija and Ghassemi, Marzyeh},
+  title     = {Ethical Machine Learning in Healthcare},
+  journal   = {Annual Review of Biomedical Data Science},
+  year      = {2021},
+  volume    = {4},
+  pages     = {123--144},
+  doi       = {10.1146/annurev-biodatasci-092820-114757}
+}
+
+@article{bellomo2012acute,
+  author    = {Bellomo, Rinaldo and Kellum, John A and Ronco, Claudio},
+  title     = {Acute kidney injury},
+  journal   = {The Lancet},
+  year      = {2012},
+  volume    = {380},
+  number    = {9843},
+  pages     = {756--766},
+  doi       = {10.1016/S0140-6736(11)61454-2}
+}
+
+@article{pearse2012mortality,
+  author    = {Pearse, Rupert M and Moreno, Rui P and Bauer, Peter and Pelosi, Paolo and Metnitz, Philipp and Spies, Claudia and Vallet, Benoit and Vincent, Jean-Louis and Hoeft, Andreas and Rhodes, Andrew},
+  title     = {Mortality after surgery in {Europe}: a 7 day cohort study},
+  journal   = {The Lancet},
+  year      = {2012},
+  volume    = {380},
+  number    = {9847},
+  pages     = {1059--1065},
+  doi       = {10.1016/S0140-6736(12)61148-9}
+}
+
+@article{khuri2005risk,
+  author    = {Khuri, Shukri F and Henderson, William G and DePalma, Ralph G and Mosca, Cecilia and Healey, Nancy A and Kumbhani, Dharam J},
+  title     = {Determinants of long-term survival after major surgery and the adverse effect of postoperative complications},
+  journal   = {Annals of Surgery},
+  year      = {2005},
+  volume    = {242},
+  number    = {3},
+  pages     = {326--343},
+  doi       = {10.1097/01.sla.0000179621.33268.83}
+}
+
+@article{nepogodiev2019global,
+  author    = {{GlobalSurg Collaborative}},
+  title     = {Global variation in postoperative mortality and complications after cancer surgery: a multicentre, prospective cohort study in 82 countries},
+  journal   = {The Lancet},
+  year      = {2021},
+  volume    = {397},
+  number    = {10272},
+  pages     = {387--397},
+  doi       = {10.1016/S0140-6736(21)00001-5}
+}
+
+@article{biccard2018perioperative,
+  author    = {Biccard, Bruce M and Madiba, Thandinkosi E and Kluyts, Hyla-Louise and Munlemvo, Dolly M and Madzimbamuto, Farai D and Basenero, Apollo and Gordon, Colin S and Youssouf, Chaibou and Rakotoarison, Sosthene R and others},
+  title     = {Perioperative patient outcomes in the {African Surgical Outcomes Study}: a 7-day prospective observational cohort study},
+  journal   = {The Lancet},
+  year      = {2018},
+  volume    = {391},
+  number    = {10130},
+  pages     = {1589--1598},
+  doi       = {10.1016/S0140-6736(18)30001-1}
+}
+
+@article{bainbridge2012perioperative,
+  author    = {Bainbridge, Daniel and Martin, Janet and Arango, Maura and Cheng, Davy},
+  title     = {Perioperative and anaesthetic-related mortality in developed and developing countries: a systematic review and meta-analysis},
+  journal   = {The Lancet},
+  year      = {2012},
+  volume    = {380},
+  number    = {9847},
+  pages     = {1075--1081},
+  doi       = {10.1016/S0140-6736(12)60990-8}
+}
+
+@article{meara2015global,
+  author    = {Meara, John G and Leather, Andrew J M and Hagander, Lars and Alkire, Blake C and Alonso, Nivaldo and Ameh, Emmanuel A and Bickler, Stephen W and Conteh, Lesong and Dare, Anna J and others},
+  title     = {Global {Surgery} 2030: evidence and solutions for achieving health, welfare, and economic development},
+  journal   = {The Lancet},
+  year      = {2015},
+  volume    = {386},
+  number    = {9993},
+  pages     = {569--624},
+  doi       = {10.1016/S0140-6736(15)60160-X}
+}
+
+% =============================================================================
+% MANDATORY DATA SOURCE CITATIONS
+% =============================================================================
+
+% PhysioNet - REQUIRED when using INSPIRE dataset
+@article{goldberger2000physiobank,
+  author    = {Goldberger, Ary L and Amaral, Luis A N and Glass, Leon and Hausdorff, Jeffrey M and Ivanov, Plamen Ch and Mark, Roger G and Mietus, Joseph E and Moody, George B and Peng, Chung-Kang and Stanley, H Eugene},
+  title     = {{PhysioBank}, {PhysioToolkit}, and {PhysioNet}: Components of a New Research Resource for Complex Physiologic Signals},
+  journal   = {Circulation},
+  year      = {2000},
+  volume    = {101},
+  number    = {23},
+  pages     = {e215--e220},
+  doi       = {10.1161/01.CIR.101.23.e215},
+  note      = {RRID:SCR\_007345}
+}
+
+% =============================================================================
+% SOFTWARE CITATIONS
+% =============================================================================
+
+@article{pedregosa2011scikit,
+  author    = {Pedregosa, Fabian and Varoquaux, Ga{\"e}l and Gramfort, Alexandre and Michel, Vincent and Thirion, Bertrand and Grisel, Olivier and Blondel, Mathieu and Prettenhofer, Peter and Weiss, Ron and Dubourg, Vincent and others},
+  title     = {Scikit-learn: Machine Learning in {Python}},
+  journal   = {Journal of Machine Learning Research},
+  year      = {2011},
+  volume    = {12},
+  pages     = {2825--2830}
+}
+
+@book{vanrossum2009python,
+  author    = {Van Rossum, Guido and Drake, Fred L},
+  title     = {Python 3 Reference Manual},
+  year      = {2009},
+  publisher = {CreateSpace},
+  address   = {Scotts Valley, CA}
+}
+
+@article{harris2020numpy,
+  author    = {Harris, Charles R and Millman, K Jarrod and van der Walt, St{\'e}fan J and Gommers, Ralf and Virtanen, Pauli and Cournapeau, David and Wieser, Eric and Taylor, Julian and Berg, Sebastian and Smith, Nathaniel J and others},
+  title     = {Array programming with {NumPy}},
+  journal   = {Nature},
+  year      = {2020},
+  volume    = {585},
+  number    = {7825},
+  pages     = {357--362},
+  doi       = {10.1038/s41586-020-2649-2}
+}
+
+@misc{pandas2020,
+  author    = {{The pandas development team}},
+  title     = {pandas-dev/pandas: Pandas},
+  year      = {2020},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.3509134}
+}
+
+@article{virtanen2020scipy,
+  author    = {Virtanen, Pauli and Gommers, Ralf and Oliphant, Travis E and Haberland, Matt and Reddy, Tyler and Cournapeau, David and Burovski, Evgeni and Peterson, Pearu and Weckesser, Warren and Bright, Jonathan and others},
+  title     = {{SciPy} 1.0: fundamental algorithms for scientific computing in {Python}},
+  journal   = {Nature Methods},
+  year      = {2020},
+  volume    = {17},
+  number    = {3},
+  pages     = {261--272},
+  doi       = {10.1038/s41592-019-0686-2}
+}
+
+% =============================================================================
+% ADDITIONAL METHODOLOGICAL REFERENCES
+% =============================================================================
+
+% For mentioning R if figures used R
+@misc{rcoreteam2024,
+  author    = {{R Core Team}},
+  title     = {R: A Language and Environment for Statistical Computing},
+  year      = {2024},
+  organization = {R Foundation for Statistical Computing},
+  address   = {Vienna, Austria},
+  url       = {https://www.R-project.org/}
+}
+
+% Optuna for Bayesian optimization (if used instead of hyperopt)
+@article{Akiba2019Optuna,
+  author    = {Akiba, Takuya and Sano, Shotaro and Yanase, Toshihiko and Ohta, Takeru and Koyama, Masanori},
+  title     = {Optuna: A Next-generation Hyperparameter Optimization Framework},
+  journal   = {Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
+  year      = {2019},
+  pages     = {2623--2631},
+  doi       = {10.1145/3292500.3330701}
+}
+
+% Gradient boosting historical reference
+@article{friedman2001greedy,
+  author    = {Friedman, Jerome H},
+  title     = {Greedy function approximation: A gradient boosting machine},
+  journal   = {Annals of Statistics},
+  year      = {2001},
+  volume    = {29},
+  number    = {5},
+  pages     = {1189--1232},
+  doi       = {10.1214/aos/1013203451}
+}
+
+% AUPRC importance for imbalanced data
+@article{davis2006relationship,
+  author    = {Davis, Jesse and Goadrich, Mark},
+  title     = {The relationship between Precision-Recall and {ROC} curves},
+  booktitle = {Proceedings of the 23rd International Conference on Machine Learning},
+  year      = {2006},
+  pages     = {233--240},
+  doi       = {10.1145/1143844.1143874}
+}
+
+% Bootstrap methods
+@book{efron1994introduction,
+  author    = {Efron, Bradley and Tibshirani, Robert J},
+  title     = {An Introduction to the Bootstrap},
+  year      = {1994},
+  publisher = {Chapman and Hall/CRC},
+  address   = {New York}
+}
+
+% Calibration assessment visual methods
+@article{austin2019graphical,
+  author    = {Austin, Peter C and Steyerberg, Ewout W},
+  title     = {Graphical assessment of internal and external calibration of logistic regression models by using loess smoothers},
+  journal   = {Statistics in Medicine},
+  year      = {2014},
+  volume    = {33},
+  number    = {3},
+  pages     = {517--535},
+  doi       = {10.1002/sim.5941}
+}
+
+% ML in healthcare - benchmark study
+@article{grinsztajn2022tree,
+  author    = {Grinsztajn, L{\'e}o and Oyallon, Edouard and Varoquaux, Ga{\"e}l},
+  title     = {Why do tree-based models still outperform deep learning on typical tabular data?},
+  journal   = {Advances in Neural Information Processing Systems},
+  year      = {2022},
+  volume    = {35},
+  pages     = {507--520}
+}
+
+% =============================================================================
+% Camel-case keys aligned with how the jamia_*.tex fragments cite.
+% =============================================================================
+
+% Phua 2015 — Asian ICU end-of-life care (Task 2)
+@article{Phua2015,
+  author    = {Phua, Jason and Joynt, Gavin M and Nishimura, Masaji and Deng, Yiyun and Myatra, Sheila Nainan and Chan, Yiong Huak and Binh, Nguyen Gia and Tan, Cheng Cheng and Faruq, Mohammad Omar and Arabi, Yaseen M and Wahjuprajitno, Bambang and Liu, Shih-Feng and Hashemian, Seyed Mohammad Reza and Kashif, Waqar and Staworn, Dusit and Palo, Jose Emmanuel and Koh, Younsuck and {ACME Study Investigators}},
+  title     = {Withholding and withdrawal of life-sustaining treatments in intensive care units in {Asia}},
+  journal   = {JAMA Internal Medicine},
+  year      = {2015},
+  volume    = {175},
+  number    = {3},
+  pages     = {363--371},
+  doi       = {10.1001/jamainternmed.2014.7386},
+  pmid      = {25581712}
+}
+
+% Park 2018 — China/Korea/Japan ICU end-of-life comparison (Task 2)
+@article{Park2018,
+  author    = {Park, So Young and Phua, Jason and Nishimura, Masaji and Deng, Yiyun and Kang, Yan and Tada, Keiichi and Koh, Younsuck},
+  title     = {End-of-life care in {ICUs} in {East Asia}: a comparison among {China}, {Korea}, and {Japan}},
+  journal   = {Critical Care Medicine},
+  year      = {2018},
+  volume    = {46},
+  number    = {7},
+  pages     = {1114--1124},
+  doi       = {10.1097/CCM.0000000000003138},
+  pmid      = {29629982}
+}
+
+% Sankar 2014 — ASA physical status inter-rater reliability (Task 5)
+@article{Sankar2014,
+  author    = {Sankar, A and Johnson, S R and Beattie, W S and Tait, G and Wijeysundera, D N},
+  title     = {Reliability of the {American Society of Anesthesiologists} physical status scale in clinical practice},
+  journal   = {British Journal of Anaesthesia},
+  year      = {2014},
+  volume    = {113},
+  number    = {3},
+  pages     = {424--432},
+  doi       = {10.1093/bja/aeu100},
+  pmid      = {24727705}
+}
+
+% Seyyed-Kalantari 2021 — CheXclusion fairness gaps (Task 4)
+@article{SeyyedKalantari2021,
+  author    = {Seyyed-Kalantari, Laleh and Liu, Guanxiong and McDermott, Matthew and Chen, Irene Y and Ghassemi, Marzyeh},
+  title     = {{CheXclusion}: Fairness gaps in deep chest {X}-ray classifiers},
+  journal   = {Pacific Symposium on Biocomputing},
+  year      = {2021},
+  volume    = {26},
+  pages     = {232--243},
+  pmid      = {33691020}
+}
+
+% Chen 2020 — AI health disparities commentary (Tasks 4 and 9)
+@article{Chen2020,
+  author    = {Chen, Irene Y and Joshi, Shalmali and Ghassemi, Marzyeh},
+  title     = {Treating health disparities with artificial intelligence},
+  journal   = {Nature Medicine},
+  year      = {2020},
+  volume    = {26},
+  number    = {1},
+  pages     = {16--17},
+  doi       = {10.1038/s41591-019-0649-2},
+  pmid      = {31932779}
+}
+
+% Pfohl 2021 — empirical characterization of fair ML for clinical risk (Tasks 4 and 9)
+@article{Pfohl2021,
+  author    = {Pfohl, Stephen R and Foryciarz, Agata and Shah, Nigam H},
+  title     = {An empirical characterization of fair machine learning for clinical risk prediction},
+  journal   = {Journal of Biomedical Informatics},
+  year      = {2021},
+  volume    = {113},
+  pages     = {103621},
+  doi       = {10.1016/j.jbi.2020.103621},
+  pmid      = {33220494}
+}
+
+% Riley 2021 — minimum sample size for external validation (Task 6, replaces Riley2019b reuse)
+@article{Riley2021Ext,
+  author    = {Riley, Richard D and Debray, Thomas P A and Collins, Gary S and Archer, Lucinda and Ensor, Joie and van Smeden, Maarten and Snell, Kym I E},
+  title     = {Minimum sample size for external validation of a clinical prediction model with a binary outcome},
+  journal   = {Statistics in Medicine},
+  year      = {2021},
+  volume    = {40},
+  number    = {19},
+  pages     = {4230--4251},
+  doi       = {10.1002/sim.9025},
+  pmid      = {34031906}
+}
+
+% --- SPRINT 6A FOLLOW-UP ADDITIONS (2026-04-26) ---
+% the missing bib entry for the canonical \cite{Finlayson2021} at
+% Dev confirmation. PubMed/DOI verification: PMID 34260843, NEJM 2021.
+
+@article{Finlayson2021,
+  author    = {Finlayson, Samuel G and Subbaswamy, Adarsh and Singh, Karandeep and Bowers, John and Kupke, Annabel and Zittrain, Jonathan and Kohane, Isaac S and Saria, Suchitra},
+  title     = {The Clinician and Dataset Shift in Artificial Intelligence},
+  journal   = {New England Journal of Medicine},
+  year      = {2021},
+  volume    = {385},
+  number    = {3},
+  pages     = {283--286},
+  doi       = {10.1056/NEJMc2104626},
+  pmid      = {34260843}
+}

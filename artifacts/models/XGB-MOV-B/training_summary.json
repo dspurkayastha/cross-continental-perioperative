@@ -1,0 +1,13 @@
+{
+  "model_id": "XGB-MOV-B",
+  "algorithm": "XGBoost",
+  "oof_auc": 0.941537017338041,
+  "oof_brier": 0.011367130798275353,
+  "oof_calibration_slope": 0.8312334691711654,
+  "oof_o_e_ratio": 0.6843483714883709,
+  "training_duration_min": 98.45221276666666,
+  "timestamp": "2025-12-13T10:33:35.999563",
+  "n_features": 140,
+  "n_samples": 57545,
+  "n_events": 823
+}

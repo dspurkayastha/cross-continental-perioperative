@@ -1,0 +1,63 @@
+{
+  "models": {
+    "XGB-INS-A": {
+      "auc": 0.807158948936173,
+      "brier": 0.05548033204574912,
+      "calibration_slope": 0.8355959676473813,
+      "duration_min": 21.623607716666665
+    },
+    "XGB-INS-B": {
+      "auc": 0.8603656686994618,
+      "brier": 0.02769548475550461,
+      "calibration_slope": 0.8434940041466158,
+      "duration_min": 304.24578471666666
+    },
+    "XGB-MOV-A": {
+      "auc": 0.9475098927415726,
+      "brier": 0.01926622886481509,
+      "calibration_slope": 1.126177269153609,
+      "duration_min": 30.05061045
+    },
+    "XGB-MOV-B": {
+      "auc": 0.941537017338041,
+      "brier": 0.011367130798275353,
+      "calibration_slope": 0.8312334691711654,
+      "duration_min": 98.45221276666666
+    },
+    "LR-INS-A": {
+      "auc": 0.8513001048032214,
+      "brier": 0.14503603094232298,
+      "calibration_slope": 0.9001684458955095,
+      "duration_min": 0.24094788333333333
+    },
+    "LR-INS-B": {
+      "auc": 0.8866990584826965,
+      "brier": 0.12344014901092322,
+      "calibration_slope": 0.8739008198130407,
+      "duration_min": 4.124438483333333
+    },
+    "LR-MOV-A": {
+      "auc": 0.9138827436732532,
+      "brier": 0.11239980694343227,
+      "calibration_slope": 0.9747994109464903,
+      "duration_min": 0.07473234999999999
+    },
+    "LR-MOV-B": {
+      "auc": 0.9312326414051642,
+      "brier": 0.09669270499760897,
+      "calibration_slope": 0.8734233256282362,
+      "duration_min": 1.1627759333333332
+    }
+  },
+  "timestamp": "2025-12-13T10:39:14.130172",
+  "quick_test": false,
+  "cv_config": {
+    "outer_folds": 10,
+    "inner_folds": 5,
+    "hpo_iterations": 50,
+    "early_stopping_rounds": 50,
+    "max_boost_rounds": 2000,
+    "random_state": 42,
+    "min_events_per_fold": 20
+  }
+}

@@ -1,0 +1,4 @@
+dimension,framing,framing_label,matched_asymmetry_pp,ci_lower,ci_upper,bootstrap_p,pct_of_baseline,interpretation,n_inspire_test,n_mover_test,notes
+comorbidity,comorbidity_match_mover_prop,INSPIRE matched to MOVER high-VW proportion (56.72%),0.09645086562959052,0.07975976631806171,0.1140420856644341,0.0009995002498750624,113.07897026633893,not_primary_driver,107247,57545,VW threshold (pooled median) = 1.00
+comorbidity,comorbidity_match_inspire_prop,MOVER matched to INSPIRE high-VW proportion (47.75%),0.10764175520026624,0.08950887475319536,0.12516295609340503,0.0009995002498750624,126.19916634499484,not_primary_driver,127413,47658,VW threshold (pooled median) = 1.00
+comorbidity,comorbidity_balanced_50_50,Both matched to 50/50 high-VW / low-VW (pooled median split),0.09680695237892925,0.07931958291814035,0.11579483859539881,0.0009995002498750624,113.49644628045112,not_primary_driver,121670,49806,VW threshold (pooled median) = 1.00

@@ -1,0 +1,28 @@
+\begin{table}[h]
+\centering
+\caption{Baseline characteristics of the INSPIRE and MOVER external-validation cohorts. Between-dataset comparisons use Welch's $t$-test for continuous variables and $\chi^2$ for categorical variables. Regenerated from the canonical predictions parquet; see \texttt{results/tables/table1\_regenerated.csv} for raw numbers.}
+\label{tab:table1}
+\begin{tabular}{lccrrr}
+\toprule
+Characteristic & INSPIRE & MOVER & Test & Statistic & $p$-value \\
+\midrule
+n (total cases) & 127,413 & 57,545 &  &  &  \\
+Age, years, median (IQR) & 60 (45--70) & 57 (41--68) & Welch t & 12.947 & 2.62e-38 \\
+Age, years, mean $\pm$ SD & 55.8 $\pm$ 16.0 & 54.7 $\pm$ 17.6 & Welch t & 12.947 & 2.62e-38 \\
+Sex &  &  & χ$^2$ & 1038.233 & 8.79e-228 \\
+  Female & 71,081 (55.8\%) & 27,456 (47.7\%) &  &  &  \\
+  Male & 56,332 (44.2\%) & 30,089 (52.3\%) &  &  &  \\
+BMI, kg/m$^2$ (mean $\pm$ SD) & 24.7 $\pm$ 73.1 & 27.9 $\pm$ 6.9 & Welch t & -15.239 & 2.15e-52 \\
+ASA physical status &  &  & χ$^2$ & 59132.924 & 0.00e+00 \\
+  ASA 1--2 & 115,139 (90.4\%) & 21,028 (36.5\%) &  &  &  \\
+  ASA $\geq$3 & 12,274 (9.6\%) & 36,517 (63.5\%) &  &  &  \\
+Surgery &  &  & χ$^2$ & 2575.191 & 0.00e+00 \\
+  Emergency & 10,033 (7.9\%) & 8,987 (15.6\%) &  &  &  \\
+  Elective & 117,380 (92.1\%) & 48,558 (84.4\%) &  &  &  \\
+In-hospital mortality & 1,387 (1.1\%) & 823 (1.4\%) & χ$^2$ & 38.893 & 4.48e-10 \\
+Deaths by ASA stratum &  &  &  &  &  \\
+  ASA 1--2 & 654 (47.2\% of deaths; 0.57\% mortality) & 9 (1.1\% of deaths; 0.04\% mortality) &  &  &  \\
+  ASA $\geq$3 & 733 (52.8\% of deaths; 5.97\% mortality) & 814 (98.9\% of deaths; 2.23\% mortality) &  &  &  \\
+\bottomrule
+\end{tabular}
+\end{table}

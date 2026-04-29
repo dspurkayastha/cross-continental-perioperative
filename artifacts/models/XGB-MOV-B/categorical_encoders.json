@@ -1,0 +1,18 @@
+{
+  "anesthesia_type": {
+    "Choice Per Patient on Day of Surgery": 0,
+    "Epidural": 1,
+    "General": 2,
+    "Local": 3,
+    "Moderate Sedation - by non-anesthesia staff only": 4,
+    "Monitored Anesthesia Care (MAC)": 5,
+    "Monitored Anesthesia Care (MAC) ": 6,
+    "Regional": 7,
+    "Spinal": 8,
+    "__unknown__": 9
+  },
+  "department": {
+    "__unknown__": 0,
+    "__missing__": -1
+  }
+}

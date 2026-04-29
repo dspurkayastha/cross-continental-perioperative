@@ -1,0 +1,10 @@
+[
+  "age",
+  "sex",
+  "height_cm",
+  "weight_kg",
+  "bmi",
+  "asa",
+  "emergency",
+  "high_asa"
+]
