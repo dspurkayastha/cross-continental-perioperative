@@ -4,19 +4,19 @@
 
 \begin{abstract}
 
-\noindent\textbf{Objective.} To test whether stratified external validation detects Simpson's paradox in clinical prediction models, whether cross-population transferability is symmetric, and whether case-level paired bootstrap provides a unified inferential framework.
+\noindent\textbf{Objective.} To test whether stratified within-cohort analysis, bidirectional external validation, and case-level paired bootstrap inference jointly surface failure-mode magnitudes in cross-continental clinical prediction that aggregate metrics conceal.
 
 \vspace{0.5em}
-\noindent\textbf{Materials and Methods.} Bidirectional external validation of eight machine learning models (XGBoost and logistic regression $\times$ preoperative and preoperative+intraoperative features $\times$ trained on INSPIRE [Korea; n = \pnTableOneNInspire] or MOVER [USA; n = \pnTableOneNMover]). Case-level paired bootstrap (2,000 iterations) served as the primary inferential framework. Direction asymmetry was stress-tested via matched-subsampling across four case-mix dimensions (ASA, Elixhauser comorbidity, emergency proportion, temporal period). Feature-importance transferability was assessed via SHAP rank correlation.
+\noindent\textbf{Materials and Methods.} Eight machine learning models (XGBoost and logistic regression, on preoperative and preoperative$+$intraoperative feature sets) were trained on each of INSPIRE (Korea; $n =$~\pnTableOneNInspire) and MOVER (USA; $n =$~\pnTableOneNMover), then evaluated bidirectionally between cohorts. Case-level paired bootstrap (2{,}000 iterations) was the primary inferential framework. Direction asymmetry was stress-tested via matched-subsampling across four case-mix dimensions (ASA, Elixhauser comorbidity, emergency proportion, temporal period). Feature-importance transferability used SHAP rank correlation; calibration used slope, intercept, O:E, and Brier score before and after Platt scaling.
 
 \vspace{0.5em}
-\noindent\textbf{Results.} Preoperative models exhibited Simpson's paradox: one model achieved overall AUC 0.756 while within-stratum AUC fell to 0.58--0.60 (gap +16.5 pp, 95\% CI 15.1--18.0). Cross-continental transferability was markedly asymmetric (+8.53 pp, 95\% CI 6.91--10.24, bootstrap $p = 0.001$); the asymmetry survived matching on ASA and comorbidity, attenuated to 70--86\% of baseline after matching emergency proportion, and was untestable for temporal period. Internal--external SHAP rank correlation was 0.97 for the best model; all models required Platt recalibration. Intraoperative features provided a mean external AUC advantage of \pnMeanIntraopAdvantageFull.
+\noindent\textbf{Results.} Across the eight cross-population runs, aggregate AUCs concealed substantially lower within-stratum AUCs (Simpson's paradox gap range 5.0--16.5 pp; worst case: aggregate AUC 0.756 vs within-stratum AUCs 0.58--0.60). Cross-continental transferability was markedly direction-asymmetric ($+$8.53 pp, 95\% CI 6.91--10.24, bootstrap $p = 0.001$); the asymmetry survived matching on ASA and comorbidity, attenuated to 70--86\% of baseline after matching emergency proportion, and was untestable for temporal period. Pre-Platt calibration slopes ranged 0.41--1.29 across all eight cross-population runs; 5-fold CV Platt scaling restored slopes to 0.95--1.02. Intraoperative features conferred a mean external AUC advantage of \pnMeanIntraopAdvantageFull.
 
 \vspace{0.5em}
-\noindent\textbf{Discussion.} Aggregate discrimination metrics systematically underreport cross-population deployment risks. Stratified within-cohort analysis, bidirectional testing with matched case-mix sensitivity, and case-level bootstrap inference together detect failure modes invisible to conventional reporting. Cross-population models preserve feature relationships but not probability mappings.
+\noindent\textbf{Discussion.} These magnitudes are clinically material and not visible to conventional aggregate reporting. The methodological commitments that surface them are well-established individually; their joint application here characterizes failure-mode magnitudes that single commitments would underestimate.
 
 \vspace{0.5em}
-\noindent\textbf{Conclusion.} External validation of clinical prediction models requires stratified, bidirectional, and case-level-inferential evaluation. We jointly demonstrate three TRIPOD+AI-aligned commitments and recommend their routine adoption in cross-population external validation.
+\noindent\textbf{Conclusion.} We present this case study as a cautionary reference for cross-population deployment of clinical prediction models, with reproducibility infrastructure released for verification and extension.
 
 \end{abstract}
 

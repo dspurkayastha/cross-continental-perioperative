@@ -13,7 +13,7 @@ authors:
     affiliation: >-
       Department of Oncosurgery, Silchar Cancer Centre, ACCF, Silchar, Assam, India
     orcid: 'https://orcid.org/0009-0001-9641-4384'
-    email: debaraj.purkayasha@accf.in
+    email: debaraj.purkayastha@accf.in
 license: MIT
 repository-code: 'https://github.com/dspurkayastha/cross-continental-perioperative'
 abstract: >-
@@ -40,9 +40,9 @@ keywords:
 preferred-citation:
   type: article
   title: >-
-    Bidirectional external validation reveals Simpson's paradox and
-    direction-asymmetric transfer in clinical prediction models: a
-    cross-continental perioperative mortality study
+    When external validation isn't enough: Simpson's paradox, direction
+    asymmetry, and calibration collapse in cross-continental perioperative
+    mortality prediction
   authors:
     - given-names: Debaraj
       family-names: Shome Purkayastha

@@ -54,6 +54,7 @@
   publisher = {Oxford University Press}
 }
 
+% --- Force-11 [dataset] entries for the Data Availability Statement ---
 @misc{INSPIRE_dataset,
   author    = {Lim, Jae Young and Lee, Hyung-Chul and Jung, Chul-Woo and others},
   title     = {{[dataset]} {INSPIRE}: A publicly available research dataset for perioperative medicine, version 1.3},
@@ -87,6 +88,7 @@
   doi       = {10.1002/sim.7992}
 }
 
+% Riley 2021 external-validation entry merged into canonical Riley2021Ext below.
 
 % --- MACHINE LEARNING METHODS ---
 
@@ -691,7 +693,9 @@
 }
 
 % =============================================================================
-% Camel-case keys aligned with how the jamia_*.tex fragments cite.
+% SPRINT 3 ADDITIONS (2026-04-25) — all PubMed-verified; see
+% results/sprint_3_findings.md for per-citation provenance.
+% Camel-case keys are aligned with how the jamia_*.tex fragments cite.
 % =============================================================================
 
 % Phua 2015 — Asian ICU end-of-life care (Task 2)
@@ -782,9 +786,8 @@
   pmid      = {34031906}
 }
 
-% --- SPRINT 6A FOLLOW-UP ADDITIONS (2026-04-26) ---
-% the missing bib entry for the canonical \cite{Finlayson2021} at
-% Dev confirmation. PubMed/DOI verification: PMID 34260843, NEJM 2021.
+% Finlayson 2021 NEJM "The Clinician and Dataset Shift in Artificial Intelligence":
+% PMID 34260843, NEJM 2021. Cited from the discussion's literature-comparison subsection.
 
 @article{Finlayson2021,
   author    = {Finlayson, Samuel G and Subbaswamy, Adarsh and Singh, Karandeep and Bowers, John and Kupke, Annabel and Zittrain, Jonathan and Kohane, Isaac S and Saria, Suchitra},
@@ -797,3 +800,86 @@
   doi       = {10.1056/NEJMc2104626},
   pmid      = {34260843}
 }
+
+% --- Additional cautionary-reframe references (7 entries) ---
+% Cited in revised Intro paragraphs, Discussion comparison-with-existing-literature
+% and clinical-implications subsections, and the Conclusion. Lowercase
+% author-year-keyword keys per the modal naming convention in this file.
+
+@article{eylerdang2024kidsor,
+  author = {Eyler Dang, Lauren and Klazura, Greg and Yap, Ava and Ozgediz, Doruk and Bryce, Emma and Cheung, Maija and Fedatto, Ma{\'i}ra and Ameh, Emmanuel A.},
+  title = {Development and Internal-External Validation of a Post-Operative Mortality Risk Calculator for Pediatric Surgical Patients in Low- and Middle-Income Countries Using Machine Learning},
+  journal = {Journal of Pediatric Surgery},
+  volume = {59},
+  number = {12},
+  pages = {161883},
+  year = {2024},
+  doi = {10.1016/j.jpedsurg.2024.161883}
+}
+
+@article{chipman2017simpson,
+  author = {Chipman, Jonathan and Braun, Danielle},
+  title = {{Simpson's} paradox in the integrated discrimination improvement},
+  journal = {Statistics in Medicine},
+  volume = {36},
+  number = {28},
+  pages = {4468--4481},
+  year = {2017},
+  doi = {10.1002/sim.6862}
+}
+
+@article{heus2018tripod,
+  author = {Heus, Pauline and Damen, Johanna A. A. G. and Pajouheshnia, Romin and Scholten, Rob J. P. M. and Reitsma, Johannes B. and Collins, Gary S. and Altman, Douglas G. and Moons, Karel G. M. and Hooft, Lotty},
+  title = {Poor reporting of multivariable prediction model studies: towards a targeted implementation strategy of the {TRIPOD} statement},
+  journal = {BMC Medicine},
+  volume = {16},
+  number = {1},
+  pages = {120},
+  year = {2018},
+  doi = {10.1186/s12916-018-1099-2}
+}
+
+@article{andaurnavarro2022ml,
+  author = {Andaur Navarro, Constanza L. and Damen, Johanna A. A. and Takada, Toshihiko and Nijman, Steven W. J. and Dhiman, Paula and Ma, Jie and Collins, Gary S. and Bajpai, Ram and Riley, Richard D. and Moons, Karel G. M. and Hooft, Lotty},
+  title = {Completeness of reporting of clinical prediction models developed using supervised machine learning: a systematic review},
+  journal = {BMC Medical Research Methodology},
+  volume = {22},
+  number = {1},
+  pages = {12},
+  year = {2022},
+  doi = {10.1186/s12874-021-01469-6}
+}
+
+@article{arina2024probast,
+  author = {Arina, Pietro and Kaczorek, Maciej R. and Hofmaenner, Daniel A. and Pisciotta, Walter and Refinetti, Patricia and Singer, Mervyn and Mazomenos, Evangelos B. and Whittle, John},
+  title = {Prediction of complications and prognostication in perioperative medicine: a systematic review and {PROBAST} assessment of machine learning tools},
+  journal = {Anesthesiology},
+  volume = {140},
+  number = {1},
+  pages = {85--101},
+  year = {2024},
+  doi = {10.1097/ALN.0000000000004764}
+}
+
+@article{eylerdang2021right,
+  author = {Eyler Dang, Lauren E. and Hubbard, Alan and Dissak-Delon, Fanny Nadia and Chichom Mefire, Alain and Juillard, Catherine},
+  title = {Right population, right resources, right algorithm: {U}sing machine learning efficiently and effectively in surgical systems where data are a limited resource},
+  journal = {Surgery},
+  volume = {169},
+  number = {1},
+  pages = {20--22},
+  year = {2021},
+  doi = {10.1016/j.surg.2020.11.043}
+}
+
+@article{wong2021epic,
+  author = {Wong, Andrew and Otles, Erkin and Donnelly, John P. and Krumm, Andrew and McCullough, Jeffrey and DeTroyer-Cooley, Olivia and Pestrue, Justin and Phillips, Marie and Konye, Judy and Penoza, Carleen and Ghous, Muhammad and Singh, Karandeep},
+  title = {External validation of a widely implemented proprietary sepsis prediction model in hospitalized patients},
+  journal = {{JAMA} Internal Medicine},
+  volume = {181},
+  number = {8},
+  pages = {1065--1070},
+  year = {2021},
+  doi = {10.1001/jamainternmed.2021.2626}
+}
+% --- End additional references ---

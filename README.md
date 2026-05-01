@@ -2,7 +2,7 @@
 
 Reproducibility repository for:
 
-> **Bidirectional external validation reveals Simpson's paradox and direction-asymmetric transfer in clinical prediction models: a cross-continental perioperative mortality study.**
+> **When external validation isn't enough: Simpson's paradox, direction asymmetry, and calibration collapse in cross-continental perioperative mortality prediction.**
 > Debaraj Shome Purkayastha, MS. *Journal of the American Medical Informatics Association* (under review). Preprint: medRxiv DOI [10.64898/2025.12.28.25343118](https://doi.org/10.64898/2025.12.28.25343118).
 
 This repository contains the analysis code, figure-generation scripts, trained model objects, aggregate analysis outputs, and LaTeX manuscript sources. It is the citable reproducibility artifact deposited at Zenodo alongside the JAMIA submission.
@@ -135,9 +135,9 @@ If you use this code, the released models, or the analysis outputs, please cite 
 ```bibtex
 @article{ShomePurkayastha2026,
   author    = {Shome Purkayastha, Debaraj},
-  title     = {Bidirectional external validation reveals {Simpson's} paradox
-               and direction-asymmetric transfer in clinical prediction models:
-               a cross-continental perioperative mortality study},
+  title     = {When external validation isn't enough: {Simpson's} paradox,
+               direction asymmetry, and calibration collapse in cross-continental
+               perioperative mortality prediction},
   journal   = {Journal of the American Medical Informatics Association},
   year      = {2026},
   note      = {Under review at submission of this software release.}
@@ -159,5 +159,5 @@ MIT (see `LICENSE`). The medRxiv preprint is separately under CC-BY-NC-ND 4.0 pe
 Debaraj Shome Purkayastha, MS
 Department of Oncosurgery, Silchar Cancer Centre, ACCF
 Silchar, Assam, India
-Email: debaraj.purkayasha@accf.in
+Email: debaraj.purkayastha@accf.in
 ORCID: [0009-0001-9641-4384](https://orcid.org/0009-0001-9641-4384)
