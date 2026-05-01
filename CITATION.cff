@@ -6,7 +6,8 @@ message: >-
   If you use this software or the released model objects, please cite both the
   associated JAMIA paper (preferred citation) and this software deposit.
 type: software
-version: 1.0.0
+version: 1.0.1
+date-released: 2026-05-01
 authors:
   - given-names: Debaraj
     family-names: Shome Purkayastha
@@ -55,6 +56,12 @@ preferred-citation:
     Under review at the time of this software release. Update the year, volume,
     issue, pages, and DOI fields once the article is published.
 identifiers:
+  - description: Zenodo concept DOI (resolves to latest version)
+    type: doi
+    value: 10.5281/zenodo.19941764
+  - description: Zenodo version-specific DOI for v1.0.0
+    type: doi
+    value: 10.5281/zenodo.19941765
   - description: medRxiv preprint v1
     type: doi
     value: 10.64898/2025.12.28.25343118
